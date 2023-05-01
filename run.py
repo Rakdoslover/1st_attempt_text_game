@@ -8,10 +8,8 @@ def intro_scene():
     The general structure of the intro scene might recur through further scenes.
     """
 
-    print("""Welcome to the Lost Island!!
-        Let's dive into the tropical adventure!!
-
-        The sun is scorching your beaten body as you wake to the sound of waves rolling in. 
+    print(
+        """The sun is scorching your beaten body as you wake to the sound of waves rolling in. 
         Slowly you open your eyes and find yourself laying in the sand. 
 
         Are you content with laying here for the rest of the day or do you want to explore?
@@ -37,4 +35,45 @@ def intro_scene():
             print("ENTER THE CORRECT CHOICE! Stay or Stand?")
             c1 = input()
 
-intro_scene()
+def beach_scene():
+    """
+    This is the function defining the players choice on the beach.
+    """
+
+    print(
+        """You peer into the dense forest infront of you but can't make out anything particular.
+        A small breeze caresses your arms and a chill runs down your bones.
+        What awaits you inside the darkness?
+        Do you want to take the path through forest or stay on the edge of the tree line?
+
+        Type your choice: Path or Tree line?
+    """)
+    c1 = input()
+    time.sleep(1)
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if(c1.upper()=='PATH'):
+            print("\nAs you step in under the shadowy boughs you find a lush greenery.")
+            print("\nThe path slithers onwards like a snake, under roots and over stones as far the eye can see.")
+            ans = 'correct'
+            clearing_scene()
+        elif(c1.upper()=="TREE LINE"):
+            print("\nYou follow the edge of the tree line until you come across a small bay.")
+            print("\nFrom where you stand you can see the outlines of something half buried in the sand.")
+            ans = 'correct'
+            shipwreck_scene()
+        else:
+            print("ENTER THE CORRECT CHOICE! Path or Tree line?")
+            c1 = input()
+
+
+
+def main():
+    """
+    Run all program functions
+    """
+    intro_scene()
+
+print(""""Welcome to the Lost Island!!
+        Let's dive into the tropical adventure!!""")
+main()
