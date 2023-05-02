@@ -235,7 +235,10 @@ def house_outer_scene():
     print(
         """
         A small house, lined by large hedges, sits alone on the little hill you just finished climbing.
-        
+        From where you're standing it looks abandoned, the single window is broken and there are small pieces of glas on the ground.
+        Do you enter the house or turn around and go back down?
+
+        Type your choice: Enter or Return?
     """)
 
 
