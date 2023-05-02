@@ -1,6 +1,7 @@
 import time
 
-player = ""
+player = [""]
+
 
 def intro_scene():
     """
@@ -85,7 +86,7 @@ def shipwreck_scene():
     time.sleep(1)
     ans = 'incorrect'
     while(ans == 'incorrect'):
-        if(c1.upper=='INVESTIGATE'):
+        if(c1.upper()=='INVESTIGATE'):
             print("\nYou descend the dune and start investigating the boat, it's old and badly damaged, you can't sail it.")
             print("\nAs you move the remains of what could once have been a sail, you find a water damaged notebook.")
             print("\nInside someone has scribbled '42 days' page up and page down.")
@@ -120,14 +121,15 @@ def clearing_scene():
     time.sleep(1)
     ans = 'incorrect'
     while(ans == 'incorrect'):
-        if(c1.upper=='INVESTIGATE'):
+        if(c1.upper()=='INVESTIGATE'):
             print("\nAs you approach the tree you notice a cavity in it, curious as you are, you reach into it.")
             print("\nIt's empty say for one little object, you pick it up, it's small but quite heavy.")
             print("\nIn your hand lays a golden acorn, it shimmers in the sunlight, you put it in your pocket.")
             print("\nYou continue your journey into the deeper parts of the forest.")
             ans = 'correct'
-            player = "Golden Acorn"
             gate_scene()
+            player = "1"
+            return player
         elif(c1.upper()=='MOVE ON'):
             print("\nThe lovely aroma of the flowers abruptly disappears as you pass under a large root.")
             print("\nThere is a sticky dampness that embraces you, you hear the sound of animals in the distance.")
@@ -202,8 +204,8 @@ def pillar_scene():
     time.sleep(1)
     ans ='incorrect'
     while(ans == 'incorrect'):
-        if(c1.upper=='INVESTIGATE'):
-            if(player=='Golden Acorn'):
+        if(c1.upper()=='INVESTIGATE'):
+            if(player=='1'):
                 print("\nOn the top of the pillar is an acorn-shaped hole.")
                 print("\nYou place the golden acorn in the hole and hear a rumbling sound.")
                 print("\nSlowly the pillar starts to spin, as it does a hidden staircase opens up, you descend down the stairs.")
@@ -211,8 +213,8 @@ def pillar_scene():
                 cavern_scene()
             else:
                 print("\nOn the top of the pillar is an acorn-shaped hole.")
-                print("\nSomething seems out of place, put you can't put your finge ron what.")
-                print("\nAs you can't do more you move aling through the tree alley.")
+                print("\nSomething seems out of place, put you can't put your finger on what.")
+                print("\nAs you can't do more you move along through the tree alley.")
                 house_outer_scene()
         elif(c1.upper()=='MOVE ON'):
             print("\nThe trees forming the walls of the alley tunnel are so thick that you can't see what's on the other side.")
@@ -225,6 +227,19 @@ def pillar_scene():
             c1 = input()
 
 
+def house_outer_scene():
+    """
+    This is the function defining the players choice outside the house.
+    """
+
+    print(
+        """
+        A small house, lined by large hedges, sits alone on the little hill you just finished climbing.
+        
+    """)
+
+
+
 def main():
     """
     Run all program functions
@@ -233,4 +248,5 @@ def main():
 
 print(""""Welcome to the Lost Island!!
         Let's dive into the tropical adventure!!""")
-main()
+#main()
+clearing_scene()
