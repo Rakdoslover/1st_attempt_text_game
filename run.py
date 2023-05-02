@@ -1,6 +1,6 @@
 import time
 
-player = 
+player = ""
 
 def intro_scene():
     """
@@ -95,7 +95,7 @@ def shipwreck_scene():
         elif(c1.upper()=='PATH'):
             print("\nAs you step in under the shadowy boughs you find a lush greenery.")
             print("\nThe path slithers onwards like a snake, under roots and over stones as far the eye can see.")
-            ans = 'correct'")
+            ans = 'correct'
             gate_scene()
         else:
             print("ENTER THE CORRECT CHOICE! Investigate or Path?")
@@ -140,7 +140,7 @@ def clearing_scene():
 
 def gate_scene():
     """
-    This is the function definin the players choice by the gate.
+    This is the function defining the players choice by the gate.
     """
     print(
         """
@@ -148,13 +148,81 @@ def gate_scene():
         It is large and it doesnt look like you can go around it.
         On the ground in front of it lies five equally large boulders, each one with an inscription.
         The first one reads 'I', the second reads 'VI', the third reads 'IV', the fourth reads 'III' and the last one reads 'VIII'.
-        One the someone seems to carved the words 'LAST ONE, FIVE HAVE LEFT...'
+        One the someone seems to carved the words 'I AM THE LAST ONE, FIVE HAVE LEFT...'
         Nonsensicle words or a clue? 
 
         Type your choice: First, Second, Third, Fourth or Fifth?
     """)
+    c1 = input()
+    time.sleep(1)
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if(c1.upper()=='FIRST'):
+            print("""Nothing happens, you try again.
+            Type your choice: First, Second, Third, Fourth or Fifth?""")
+            c1 = input()
+        elif(c1.upper()=='SECOND'):
+            print("\nWhen you press the second stone something clicks and the stone slowly descends into the ground.")
+            print("\nOn rusted hinges the large gate squeeks open.") 
+            print("\nAs you pass through, the sounds of the forest suddenly fall silent.")
+            ans = 'correct'
+            pillar_scene()
+        elif(c1.upper()=='THIRD'):
+            print("""Nothing happens, you try again.
+            Type your choice: First, Second, Third, Fourth or Fifth?""")
+            c1 = input()
+        elif(c1.upper()=='FOURTH'):
+            print("""Nothing happens, you try again.
+            Type your choice: First, Second, Third, Fourth or Fifth?""")
+            c1 = input()
+        elif(c1.upper()=='FIFTH'):
+            print("""Nothing happens, you try again.
+            Type your choice: First, Second, Third, Fourth or Fifth?""")
+            c1 = input()
+        else:
+            print("TRY AGAIN: First, Second, Third, Fourth or Fifth?")
+            c1 = input()
 
 
+def pillar_scene():
+    """
+    This is the function defining the players choice by the pillar.
+    """
+
+    print(
+        """
+        On the other side of the gate a small area opens up under the hanging branches.
+        The greenery around you forms impenetrable walls, in the middle of the area stands a small stome pillar.
+        The pillar bears a small engraving symbolizing an acorn, behind the pillar a tree alley forms a tunnel leading away from the small area.
+        Would you like to investigate the pillar or move on ahead?
+
+        Type your choice: Investigate or Move on?
+    """)
+    c1 = input()
+    time.sleep(1)
+    ans ='incorrect'
+    while(ans == 'incorrect'):
+        if(c1.upper=='INVESTIGATE'):
+            if(player=='Golden Acorn'):
+                print("\nOn the top of the pillar is an acorn-shaped hole.")
+                print("\nYou place the golden acorn in the hole and hear a rumbling sound.")
+                print("\nSlowly the pillar starts to spin, as it does a hidden staircase opens up, you descend down the stairs.")
+                ans = 'correct'
+                cavern_scene()
+            else:
+                print("\nOn the top of the pillar is an acorn-shaped hole.")
+                print("\nSomething seems out of place, put you can't put your finge ron what.")
+                print("\nAs you can't do more you move aling through the tree alley.")
+                house_outer_scene()
+        elif(c1.upper()=='MOVE ON'):
+            print("\nThe trees forming the walls of the alley tunnel are so thick that you can't see what's on the other side.")
+            print("\nAs you move along, the alley suddenly becomes very steep, you notice that you're climbing a hill.")
+            print("\nYou climb and climb until you see a house.")
+            ans = 'correct'
+            house_outer_scene()
+        else:
+            print("ENTER THE CORRECT CHOICE! Investigate or Move on?")
+            c1 = input()
 
 
 def main():
