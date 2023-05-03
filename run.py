@@ -240,7 +240,207 @@ def house_outer_scene():
 
         Type your choice: Enter or Return?
     """)
+    c1 = input()
+    time.sleep(1)
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if(c1.upper()=='ENTER'):
+            print("\nYou enter through the front door and find yourself in a small kitchen.")
+            print("\nThe layer of dust indicates that nobody has been here for years.")
+            ans = 'correct'
+            basket_scene()
+        elif(c1.upper()=='RETURN'):
+            print("\nYou don't want to enter the old house and instead you turn and walk down the hill back to the pillar.")
+            ans = 'correct'
+            pillar_two_scene()
+        else:
+            print("ENTER THE CORRECT CHOICE! Enter or Return?")
+            c1 = input()
 
+def pillar_two_scene():
+    """
+    This the function defining the players choice back at the pillar
+    """
+    print(
+        """
+        You return to the lonely pillar with the engraving of an acorn.
+        Here the sounds of the world around you falls silent as it did the first time you passed through the gate.
+        Speaking of the gate, it's shut, you try to open it, but it won't budge.
+        What du you do now?
+
+        Type you choice: Investigate or Move on?
+    """)
+    c1 = input()
+    time.sleep(1)
+    ans ='incorrect'
+    while(ans == 'incorrect'):
+        if(c1.upper()=='INVESTIGATE'):
+            if(player=='1'):
+                print("\nOn the top of the pillar is an acorn-shaped hole.")
+                print("\nYou place the golden acorn in the hole and hear a rumbling sound.")
+                print("\nSlowly the pillar starts to spin, as it does a hidden staircase opens up, you descend down the stairs.")
+                ans = 'correct'
+                cavern_scene()
+            else:
+                print("\nOn the top of the pillar is an acorn-shaped hole.")
+                print("\nSomething seems out of place, put you can't put your finger on what.")
+                print("\nAs you can't do more you move along through the tree alley.")
+                house_outer_scene()
+        elif(c1.upper()=='MOVE ON'):
+            print("\nYou turn around again as you making your way up the steep hill again.")
+            print("\nSoon enough you see the small house at the end of the tree alley.")
+            ans = 'correct'
+            house_outer_scene()
+        else:
+            print("ENTER THE CORRECT CHOICE! Investigate or Move on?")
+            c1 = input()
+
+def basket_scene():
+    """
+    This is the function defining the players choice by the basket.
+    """
+    print(
+        """
+        On a round table infront of the unlit fire place is a basket of golden acorns, somehow the acorns triggers a memory.
+        Just over the fire place rests a beautiful short sword, it catches your eye as it seems out of place.
+        Other than that nothing in the small house seems of interest.
+        What do you do, will you take some acorns or investigate the sword?
+
+        Type you choice: Acorns or Investigate?
+    """)
+    c1 = input()
+    time.sleep(1)
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if(c1.upper()=='ACORNS'):
+            print("\nYou grab a handful of acorns and put them into your pocket.")
+            print("\nSomething tells you that these might be useful by the pillar you passed earlier.")
+            print("\nYou leave the house and make your way down the tree alley towards the loenly pillar.")
+            ans = 'correct'
+            player = "1"
+            return player
+            pillar_two_scene()
+        elif(c1.upper()=='INVESTIGATE'):
+            print("\nAs you lift the sword off it's rest you hear a loud crack and the sound of heavy movement.")
+            print("\ninstinctively, you take a step backwards, where the fire place was just a second ago now stands a tunnel.")
+            print("\nIt's dark inside but with your new sword you find courage, you get down on all four and crawl inside.")
+            ans = 'correct'
+            secret_room_scene()
+        else:
+            print("ENTER THE CORRECT CHOICE! Acorns or Investigate?")
+            c1 = input()
+
+def secret_room_scene():
+    """
+    This is the function defining the players choice inside the secret room.
+    """
+    print(
+        """
+        The short crawl takes you to a secret room on the other side of the fire place.
+        It's a square shaped room with no color, everything is grey and it seems as mold has crawled up parts of the walls.
+        The only light source are two lit candles on the floor, they shine their light on the wall opposite the tunnel.
+        Through the swaying light you can make out words and letters, it says:
+        'Say my name and enter'
+        Underneath are a bunch of letters:
+        'A', 'K', 'A', 'N', 'M', 'Y' and 'D'
+        What does it mean, you stop to think about it.
+
+        Type your answer: 
+    """)
+    c1 = input()
+    time.sleep(1)
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if(c1.upper()=='ADAM'):
+            print("\nAs you speak the name ADAM a trapdoor suddenly opens up under you feet and you fall.")
+            print("\nThe fall is short as you quickly land on a chute and your descent speeds up.")
+            print("\nWhen the chute later comes to an end you find yourself in an underground cavern, someone seems to have been here before you as there are torches lit all across the spacious area.")
+            print("\nAnother tunnel seems to be the only way forward, you pick a torch off the wall and make your way forward.")
+            ans = 'correct'
+            ship_scene()
+        elif(c1.upper()=='MAYA'):
+            print("\nAs you speak the name MAYA a trapdoor suddenly opens up under your feet and you fall.")
+            print("\nThe fall is short but devastating, you find yourself at the bottom of pit you can't get out of.")
+            print("\nAs you come to the sad realization you contemplate whether it was ever a good idea leave the beach.")
+            ans = 'correct'
+        elif(c1.upp()=='NADYA'):
+            print("\nAs you speak the name NADYA a hidden door in the wall in front of you opens up, it leads downward into the darkness.")
+            print("\nYour grip around the short sword tightens as you move deeper into the darkness.")
+            print("\nA minute passes as you clumsily make your way downward, but suddenly you see a strong light.")
+            print("\nYou step out into a gigantic cavernous space filled to the brim with all the treasure you could aver imagine.")
+            print("\nOn the other side of the enormous space you see pirate ship, you think to yourself that this must be some kind of underground hideout.")
+            ans = 'correct'
+            gold_scene()
+        else:
+            print("ENTER THE CORRECT NAME! Please try again.")
+            c1 = input()
+
+def ship_scene():
+    """
+    This is the function leading the player to the ship ending.
+    """
+    print(
+        """
+        With your torch in hand you slowly move through the tunnel until you end up in another cavern, this one a little bigger.
+        What you see makes you happy, in the light from the torch you can clearly make out an underground river and a boat tied around a large rock.
+        You make your way down to the boat, untie it and sail out of here.
+        It doesn't take long before the river leads you to the ocean, with wind in your sail you leave the mysterious island behind you, never to return.
+
+
+        Congratulation on escaping the Lost Island!
+        Until next time stranger!
+    """)
+    ans = 'correct'
+    
+
+def gold_scene():
+    """
+    This is the function leading the player to the gold ending.
+    """
+    print(
+        """
+        With a hysterical glee you run around like an idiot picking jewels and gemstones from off the floor and into your pockets.
+        When at last your pockets are full you start to investigate the pirate ship, it's a little older but seems rigid enough to make take you off the island.
+        with both a ship and a treasure at your disposal you feel content and happy.
+        It doesn't take long until the ship is filled to the brim with all treasure that you could carry.
+        As you untie the ropes holding the ship you hear a groaning sound behind you, you turn around and come face to face with a roughneck.
+        'Oy! Who be you then!?
+        Takin me gold, ay?'
+        En Garde, YAH!'
+        You draw you sword and get ready to fight.
+
+        Type your action: Slash, Thrust or Parry?
+    """)
+    c1 = input()
+    time.sleep(1)
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if(c1.upper()=='SLASH'):
+            print("\nYou slash at the pirate, he parries your slash and slashes bakc at you.")
+            print("\nA fierce fight erupts, swords clashing against one another.")
+            print("\nAfter a long while you both fall down exhausted and panting.")
+            print("\n'Oy! You wanna call it a Tie, mate?'")
+            print("\nYou agree with the pirate, as you shake it out you both laugh wholeheartedly, it seems you fought an enemy but found a friend instead.")
+            print("\nTogether you sail off into the sunset, and from that day forward you spent the remainder of your days pirating the seven seas.")
+            ans = 'correct'
+            print("\n Congratulation on escaping the Lost Island! Until next time stranger!")
+        elif(c1.upper()=='THRUST'):
+            print("\nYou thrust your sword towards the roughneck and it plunges into his belly, he lets out a roar of pain and falls to the deck.")
+            print("\n'Oh the pain, mate! Oh and Eh!'")
+            print("\nVictorious you set sail with your treasure-filled ship, as you leave this mysterious island behind you, a feeling of relief fills your body.")
+            ans = 'correct'
+            print("\n Congratulation on escaping the Lost Island! Until next time stranger!")
+        elif(c1.upper()=='PARRY'):
+            print("\nYou parry and parry the swift slashes thrown at you and after fierce moment of fighting the old roughneck suddenly lets out a grunt and falls over.")
+            print("\n'Nay! My back! Oh and Eh, it hurts. Aye, stranger! I forfeit!'")
+            print("\nYou pity the man and helps him back to his feet again, he thanks you and shakes your hand.")
+            print("\nIn that moment you both reach an agreement and becomes friends.")
+            print("\nTogether you sail off into the sunset, and from that day forward you spent the remainder of your days pirating the seven seas.")
+            ans = 'correct'
+            print("\n Congratulation on escaping the Lost Island! Until next time stranger!")
+        else:
+            print("ENTER THE CORRECT OPTION! Slash, Thrust or Parry.")
+            c1 = input()
 
 
 def main():
@@ -251,5 +451,4 @@ def main():
 
 print(""""Welcome to the Lost Island!!
         Let's dive into the tropical adventure!!""")
-#main()
-clearing_scene()
+main()
