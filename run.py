@@ -295,6 +295,24 @@ def pillar_two_scene():
             print("ENTER THE CORRECT CHOICE! Investigate or Move on?")
             c1 = input()
 
+def cavern_scene():
+    """
+    This is the function leading the player through the cavern after the pillar.
+    """
+    print(
+        """
+        A light reaches you as take the final steps out into a large cave.
+        Torches light the waste space as you gaze down upon a boat rocking steadily on the underground river.
+        You pick up one of the torches next to you and make your down to the boat.
+        It seems sturdy enough, you untie it and set off downstream.
+        Again, light reaches you further down, this time though it is daylight.
+        The wide ocean spreads out infront of you like a beautiful carpet and it is yours for the taking.
+        You raise the sails and leave this mysterious place behind once and for all.
+
+        Congratulation on escaping the Lost Island!
+        Until next time stranger!
+    """)
+
 def basket_scene():
     """
     This is the function defining the players choice by the basket.
