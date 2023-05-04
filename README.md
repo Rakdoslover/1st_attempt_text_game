@@ -34,7 +34,7 @@ It's a bigger assignement and I will continue to implement this idea further.
 ## Testing
 The project has been test manually by doing the following things:
 - Responsive dimensions through the inspect function on Google Chrome.
-- Checked Python syntax errors in ExtendsClass [ExtendsClass](https://extendsclass.com/python-tester.html).
+- Checked Python syntax errors in ExtendsClass [ExtendsClass](https://extendsclass.com/python-tester.html). Found no problem with the code.
 
 | Scene | Should do | Errors | Works |
 |-------|-----------|--------|-------|
@@ -66,6 +66,7 @@ Phone size
 
 ### Bugs
 
+Have a had a problem with the item system. It won't react to the players choice after picking up the right item.
 
 ## Deployment
 

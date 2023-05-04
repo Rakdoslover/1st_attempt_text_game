@@ -648,7 +648,9 @@ def main():
     """
     Run all program functions
     """
+    
     start()
+
     
 
 
