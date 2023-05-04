@@ -31,8 +31,8 @@ def intro_scene():
     """
 
     print(
-    """\n The sun is scorching your beaten body as you wake to the sound of waves rolling in. 
-        \n Slowly you open your eyes and find yourself laying in the sand. 
+    """\n The sun is scorching your beaten body as you wake to the sound of waves 
+        \n rolling in. Slowly you open your eyes and find yourself laying in the sand. 
 
         \n Are you content with laying here for the rest 
         \n of the day or do you want to explore?
@@ -53,9 +53,9 @@ def intro_scene():
             sys.exit("The End")
         elif(c1.upper()=="STAND"):
             print(
-            """\n As you stand up you look around and find that you are on a small island.\n
-                 You can't remember how you got there and you can't make out where you are.\n
-                 Behind you a path trails off into a dense and dark forest.
+            """\n As you stand up you look around and find that you are on a small island.
+                \n You can't remember how you got there and you can't make out where you are.
+                \n Behind you a path trails off into a dense and dark forest.
             """)
             ans = 'correct'
             beach_scene()
@@ -70,25 +70,31 @@ def beach_scene():
     """
 
     print(
-        """You peer into the dense forest infront of you but can't make out anything particular.
-        A small breeze caresses your arms and a chill runs down your bones.
-        What awaits you inside the darkness?
-        Do you want to take the path through forest or stay on the edge of the tree line?
-
-        Type your choice: Path or Tree line?
+    """\n You peer into the dense forest infront of you but can't make 
+        \n out anything particular. A small breeze caresses your arms and a 
+        \n chill runs down your bones. What awaits you inside the darkness?
+        \n Do you want to take the path through forest or stay on 
+        \n the edge of the tree line?
+        \n Type your choice: Path or Tree line?
     """)
     c1 = input()
     time.sleep(1)
     ans = 'incorrect'
     while(ans == 'incorrect'):
         if(c1.upper()=='PATH'):
-            print("\nAs you step in under the shadowy boughs you find a lush greenery.")
-            print("\nThe path slithers onwards like a snake, under roots and over stones as far the eye can see.")
+            print(
+            """\n As you step in under the shadowy boughs you find a lush greenery.
+                \n The path slithers onwards like a snake, under roots and over stones 
+                \n as far the eye can see.
+            """)
             ans = 'correct'
             clearing_scene()
         elif(c1.upper()=="TREE LINE"):
-            print("\nYou follow the edge of the tree line until you come across a small bay.")
-            print("\nFrom the small dune where you stand you can see the outlines of a small boat half buried in the sand.")
+            print(
+            """\n You follow the edge of the tree line until you come across a small bay.
+                \n From the small dune where you stand, you can see the outlines of a small boat
+                \n half buried in the sand.
+            """)
             ans = 'correct'
             shipwreck_scene()
         else:
@@ -102,27 +108,37 @@ def shipwreck_scene():
     """
 
     print(
-        """
-        Standing atop the small dune you see a new path lead off into the dense forest.
-        On the other side of the bay a large cliffside stops you from continuing along the tree line.
-        You contemplate whether you should investigate the small boat or take the path into the forest.
+    """
+        \n Standing atop the small dune you see a new path lead off into the dense forest.
+        \n On the other side of the bay a large cliffside stops you from 
+        \n continuing along the tree line.
+        \n You contemplate whether you should investigate the small boat or 
+        \n take the path into the forest.
 
-        Type your choice: Investigate or Path?
+        \n Type your choice: Investigate or Path?
     """)
     c1 = input()
     time.sleep(1)
     ans = 'incorrect'
     while(ans == 'incorrect'):
         if(c1.upper()=='INVESTIGATE'):
-            print("\nYou descend the dune and start investigating the boat, it's old and badly damaged, you can't sail it.")
-            print("\nAs you move the remains of what could once have been a sail, you find a water damaged notebook.")
-            print("\nInside someone has scribbled '42 days' page up and page down.")
-            print("\nBeyond that nothing else cathes your eye and thus your return to the top of the dune and take the path through the forest.")
+            print(
+            """\n You descend the dune and start investigating the boat, it's old and 
+                \n badly damaged, you can't sail it.
+                \n As you move the remains of what could once have been a sail, you find
+                \n a water damaged notebook.
+                \n Inside someone has scribbled '42 days' page up and page down.
+                \n Beyond that nothing else cathes your eye and thus your return to the 
+                \n top of the dune and take the path through the forest.
+            """)
             ans = 'correct'
             gate_scene()
         elif(c1.upper()=='PATH'):
-            print("\nAs you step in under the shadowy boughs you find a lush greenery.")
-            print("\nThe path slithers onwards like a snake, under roots and over stones as far the eye can see.")
+            print(
+            """\n As you step in under the shadowy boughs you find a lush greenery.
+                \n The path slithers onwards like a snake, under roots and over stones as far as
+                \n the eye can see.
+            """)
             ans = 'correct'
             gate_scene()
         else:
@@ -136,30 +152,35 @@ def clearing_scene():
     """
 
     print(
-        """
-        You push a heavy branch to the side and suddenly find yourself in a clearing.
-        Flowers painted by all the colors of the rainbow grows like a carpet on the ground.
-        In the middle of the clearing stands a short but solid oak tree, the path that you tread takes a right turn by it's foot.
-        You contemplate whether you should investigate the tree or move on.
+    """
+        \n You push a heavy branch to the side and suddenly find yourself in a clearing.
+        \n Flowers painted by all the colors of the rainbow grows like a carpet on the ground.
+        \n In the middle of the clearing stands a short but solid oak tree, the path that 
+        \n you tread takes a right turn by it's foot.
+        \n You contemplate whether you should investigate the tree or move on.
 
-        Type your choice: Investigate or Move on?
+        \n Type your choice: Investigate or Move on?
     """)
     c1 = input()
     time.sleep(1)
     ans = 'incorrect'
     while(ans == 'incorrect'):
         if(c1.upper()=='INVESTIGATE'):
-            print("\nAs you approach the tree you notice a cavity in it, curious as you are, you reach into it.")
-            print("\nIt's empty say for one little object, you pick it up, it's small but quite heavy.")
-            print("\nIn your hand lays a golden acorn, it shimmers in the sunlight, you put it in your pocket.")
-            print("\nYou continue your journey into the deeper parts of the forest.")
+            print(
+            """\n As you approach the tree you notice a cavity in it, curious as you are, you reach into it.
+                \n It's empty say for one little object, you pick it up, it's small but quite heavy.
+                \n In your hand lays a golden acorn, it shimmers in the sunlight, you put it in your pocket.
+                \n You continue your journey into the deeper parts of the forest.
+            """)
             ans = 'correct'
             player = True
             return player
             gate_scene()
         elif(c1.upper()=='MOVE ON'):
-            print("\nThe lovely aroma of the flowers abruptly disappears as you pass under a large root.")
-            print("\nThere is a sticky dampness that embraces you, you hear the sound of animals in the distance.")
+            print(
+            """\n The lovely aroma of the flowers abruptly disappears as you pass under a large root.
+                \n There is a sticky dampness that embraces you, you hear the sound of animals in the distance.
+            """)
             ans = 'correct'
             gate_scene()
         else:
@@ -172,15 +193,16 @@ def gate_scene():
     This is the function defining the players choice by the gate.
     """
     print(
-        """
-        You zigzag your way around a couple of weird looking trees as you come upon a rusty iron gate.
-        It is large and it doesnt look like you can go around it.
-        On the ground in front of it lies five equally large boulders, each one with an inscription.
-        The first one reads 'I', the second reads 'VI', the third reads 'IV', the fourth reads 'III' and the last one reads 'VIII'.
-        One the someone seems to carved the words 'I AM THE LAST ONE, FIVE HAVE LEFT...'
-        Nonsensicle words or a clue? 
+    """
+        \n You zigzag your way around a couple of weird looking trees as you come upon a rusty iron gate.
+        \n It is large and it doesnt look like you can go around it.
+        \n On the ground in front of it lies five equally large boulders, each one with an inscription.
+        \n The first one reads 'I', the second reads 'VI', the third reads 'IV', the fourth reads 'III' 
+        \n and the last one reads 'VIII'.
+        \n One the someone seems to carved the words 'I AM THE LAST ONE, FIVE HAVE LEFT...'
+        \n Nonsensicle words or a clue? 
 
-        Type your choice: First, Second, Third, Fourth or Fifth?
+        \n Type your choice: First, Second, Third, Fourth or Fifth?
     """)
     c1 = input()
     time.sleep(1)
