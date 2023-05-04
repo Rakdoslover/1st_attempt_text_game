@@ -27,6 +27,10 @@ Found a good link to a youtuber with easy instructions but didn't have time to i
 From the very start I found the idea of making the endings different depending on the items you picked up/ used during the adventure.
 It's a bigger assignement and I will continue to implement this idea further.
 
+## Project Chart (Lucid Chart alternative)
+
+![Photo of the chart](assets/images/chart.jpg)
+
 ## Testing
 The project has been test manually by doing the following things:
 - 

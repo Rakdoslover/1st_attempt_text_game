@@ -1,15 +1,15 @@
 import time
 
-player = [""]
+player = False
 
 def start():
     """
     This is the function starting the game.
     """
     print(
-        """
-        \nReady to get started?
-        Type Start!
+    """
+    \n Ready to get started?
+    \n Type Start!
     """)
     c1 = input()
     time.sleep(1)
@@ -30,12 +30,12 @@ def intro_scene():
     """
 
     print(
-        """The sun is scorching your beaten body as you wake to the sound of waves rolling in. 
-        Slowly you open your eyes and find yourself laying in the sand. 
+    """\n The sun is scorching your beaten body as you wake to the sound of waves rolling in. 
+        \n Slowly you open your eyes and find yourself laying in the sand. 
 
-        Are you content with laying here for the rest of the day or do you want to explore?
+        \n Are you content with laying here for the rest of the day or do you want to explore?
 
-        Type your choice: Stay or Stand?
+        \n Type your choice: Stay or Stand?
     """)
 
     c1 = input()
@@ -146,6 +146,8 @@ def clearing_scene():
             print("\nIn your hand lays a golden acorn, it shimmers in the sunlight, you put it in your pocket.")
             print("\nYou continue your journey into the deeper parts of the forest.")
             ans = 'correct'
+            player = True
+            return player
             gate_scene()
         elif(c1.upper()=='MOVE ON'):
             print("\nThe lovely aroma of the flowers abruptly disappears as you pass under a large root.")
@@ -222,7 +224,7 @@ def pillar_scene():
     ans ='incorrect'
     while(ans == 'incorrect'):
         if(c1.upper()=='INVESTIGATE'):
-            if(clearing_scene()=='True'):
+            if(player):
                 print("\nOn the top of the pillar is an acorn-shaped hole.")
                 print("\nYou place the golden acorn in the hole and hear a rumbling sound.")
                 print("\nSlowly the pillar starts to spin, as it does a hidden staircase opens up, you descend down the stairs.")
@@ -292,7 +294,7 @@ def pillar_two_scene():
     ans ='incorrect'
     while(ans == 'incorrect'):
         if(c1.upper()=='INVESTIGATE'):
-            if(player=='1'):
+            if(player):
                 print("\nOn the top of the pillar is an acorn-shaped hole.")
                 print("\nYou place the golden acorn in the hole and hear a rumbling sound.")
                 print("\nSlowly the pillar starts to spin, as it does a hidden staircase opens up, you descend down the stairs.")
@@ -352,7 +354,7 @@ def basket_scene():
             print("\nSomething tells you that these might be useful by the pillar you passed earlier.")
             print("\nYou leave the house and make your way down the tree alley towards the loenly pillar.")
             ans = 'correct'
-            player = "1"
+            player = True
             return player
             pillar_two_scene()
         elif(c1.upper()=='INVESTIGATE'):
@@ -484,6 +486,6 @@ def main():
     """
     start()
 
-print(""""Welcome to the Lost Island!!\n
-        Let's dive into the tropical adventure!!""")
+print(""" Welcome to the Lost Island!!\n
+        \n Let's dive into the tropical adventure!!""")
 main()
