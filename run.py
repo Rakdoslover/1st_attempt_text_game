@@ -467,6 +467,6 @@ def main():
     """
     intro_scene()
 
-print(""""Welcome to the Lost Island!!
+print(""""Welcome to the Lost Island!!\n
         Let's dive into the tropical adventure!!""")
 main()
