@@ -2,7 +2,26 @@ import time
 
 player = [""]
 
+def start():
+    """
+    This is the function starting the game.
+    """
+    print(
+        """
+        \nReady to get started?
+        Type Start!
+    """)
+    c1 = input()
+    time.sleep(1)
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if(c1.upper()=='START'):
+            intro_scene()
+        else:
+            print("Really.. Try typing Start")
+            c1 = input()
 
+        
 def intro_scene():
     """
     This is the function for my first scene, it introduces the player to the
@@ -465,7 +484,7 @@ def main():
     """
     Run all program functions
     """
-    intro_scene()
+    start()
 
 print(""""Welcome to the Lost Island!!\n
         Let's dive into the tropical adventure!!""")
