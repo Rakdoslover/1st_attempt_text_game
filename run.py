@@ -1,7 +1,9 @@
 import time
 import sys
 
+
 player = False
+
 
 def start():
     """
@@ -327,7 +329,10 @@ def house_outer_scene():
             ans = 'correct'
             basket_scene()
         elif(c1.upper()=='RETURN'):
-            print("\nYou don't want to enter the old house and instead you turn and walk down the hill back to the pillar.")
+            print(
+            """\n You don't want to enter the old house and instead you turn and walk 
+                \n down the hill back to the pillar.
+            """)
             ans = 'correct'
             pillar_two_scene()
         else:

@@ -5,7 +5,7 @@ The Lost Island is a text-based adventure game involving you the player as "The 
 You wake up on a sunny beach somewhere in time and space, you have no memory and no idea of where you are.
 Can you somehow figure out a way to get off the island? We'll see about that!
 
-
+![Responsive Screenshot](assets/images/responsive.jpg)
 ## Game Features
 
 The main functions of the game is letting the player make decisions(up towards 5 choices) at each scene, that guides them off the island.
