@@ -16,6 +16,17 @@ The game features multiple endings, both good and bad and can even be "cleared" 
 
 Implemented a basic item pickups system where as if the player made a certain choice beforehand, they get a specific scenerio where there usually isn't one. This happens at least 3 times in story.
 
+## Future Features
+
+### Scrolling Text
+I did experiment with scrolling text in the beginning of the project, it is something i'm still interested in and would like to implement.
+Found a good link to a youtuber with easy instructions but didn't have time to implement it before deadline.
+
+### Bigger Item System
+
+From the very start I found the idea of making the endings different depending on the items you picked up/ used during the adventure.
+It's a bigger assignement and I will continue to implement this idea further.
+
 ## Testing
 The project has been test manually by doing the following things:
 - 
