@@ -48,6 +48,7 @@ def intro_scene():
                  Night falls upon the island and then sleep finds you.
                  """)
             ans = 'correct'
+            return
         elif(c1.upper()=="STAND"):
             print("\nAs you stand up you look around and find that you are on a small island.")
             print("\nYou can't remember how you got there and you can't make out where you are.")
@@ -493,6 +494,7 @@ def main():
     Run all program functions
     """
     start()
+    
 
 
 print(""" Welcome to the Lost Island!!\n
