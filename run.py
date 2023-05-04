@@ -44,16 +44,19 @@ def intro_scene():
     ans = 'incorrect'
     while(ans == 'incorrect'):
         if(c1.upper()=='STAY'):
-            print("""\n You feel content with where you are and your situation,\n
-                 the sun travels across the sky and disappears beyond the\n
-                 horizon. Night falls upon the island and then sleep finds you.
-                 """)
+            print(
+            """\n You feel content with where you are and your situation,
+                \n the sun travels across the sky and disappears beyond the
+                \n horizon. Night falls upon the island and then sleep finds you.
+            """)
             ans = 'correct'
             sys.exit("The End")
         elif(c1.upper()=="STAND"):
-            print("""\n As you stand up you look around and find that you are on a small island.\n
+            print(
+            """\n As you stand up you look around and find that you are on a small island.\n
                  You can't remember how you got there and you can't make out where you are.\n
-                 Behind you a path trails off into a dense and dark forest.""")
+                 Behind you a path trails off into a dense and dark forest.
+            """)
             ans = 'correct'
             beach_scene()
         else:
@@ -338,7 +341,7 @@ def cavern_scene():
         Congratulation on escaping the Lost Island!
         Until next time stranger!
     """)
-
+    sys.exit("The End")
 
 def basket_scene():
     """
@@ -438,6 +441,7 @@ def ship_scene():
         Until next time stranger!
     """)
     ans = 'correct'
+    sys.exit("The End")
     
 
 def gold_scene():
@@ -471,12 +475,14 @@ def gold_scene():
             print("\nTogether you sail off into the sunset, and from that day forward you spent the remainder of your days pirating the seven seas.")
             ans = 'correct'
             print("\n Congratulation on escaping the Lost Island! Until next time stranger!")
+            sys.exit("The End")
         elif(c1.upper()=='THRUST'):
             print("\nYou thrust your sword towards the roughneck and it plunges into his belly, he lets out a roar of pain and falls to the deck.")
             print("\n'Oh the pain, mate! Oh and Eh!'")
             print("\nVictorious you set sail with your treasure-filled ship, as you leave this mysterious island behind you, a feeling of relief fills your body.")
             ans = 'correct'
             print("\n Congratulation on escaping the Lost Island! Until next time stranger!")
+            sys.exit("The End")
         elif(c1.upper()=='PARRY'):
             print("\nYou parry and parry the swift slashes thrown at you and after fierce moment of fighting the old roughneck suddenly lets out a grunt and falls over.")
             print("\n'Nay! My back! Oh and Eh, it hurts. Aye, stranger! I forfeit!'")
@@ -485,6 +491,7 @@ def gold_scene():
             print("\nTogether you sail off into the sunset, and from that day forward you spent the remainder of your days pirating the seven seas.")
             ans = 'correct'
             print("\n Congratulation on escaping the Lost Island! Until next time stranger!")
+            sys.exit("The End")
         else:
             print("ENTER THE CORRECT OPTION! Slash, Thrust or Parry.")
             c1 = input()
