@@ -33,9 +33,19 @@ It's a bigger assignement and I will continue to implement this idea further.
 
 ## Testing
 The project has been test manually by doing the following things:
+- Responsive dimensions through the inspect function on Google Chrome.
 - 
 - 
-- 
+
+### Screenshots screens
+Laptop size
+![Screenshot of laptop](assets/images/laptop-size.jpg)
+
+Ipad size
+![Screenshot of Ipad](assets/images/ipad-size.jpg)
+
+Phone size
+![Screenshot of Phone](assets/images/phone-standing.jpg)
 
 ### Bugs
 
