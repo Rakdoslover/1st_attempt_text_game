@@ -43,9 +43,10 @@ def intro_scene():
     ans = 'incorrect'
     while(ans == 'incorrect'):
         if(c1.upper()=='STAY'):
-            print("\n You feel content with where you are and your situation,\n
-                 "the sun travels across the sky and disappears beyond the horizon.\n
-                 "Night falls upon the island and then sleep finds you.")
+            print("""\n You feel content with where you are and your situation,\n
+                 the sun travels across the sky and disappears beyond the horizon.\n
+                 Night falls upon the island and then sleep finds you.
+                 """)
             ans = 'correct'
         elif(c1.upper()=="STAND"):
             print("\nAs you stand up you look around and find that you are on a small island.")
