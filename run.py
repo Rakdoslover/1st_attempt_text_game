@@ -147,8 +147,6 @@ def clearing_scene():
             print("\nYou continue your journey into the deeper parts of the forest.")
             ans = 'correct'
             gate_scene()
-            player = "1"
-            return player
         elif(c1.upper()=='MOVE ON'):
             print("\nThe lovely aroma of the flowers abruptly disappears as you pass under a large root.")
             print("\nThere is a sticky dampness that embraces you, you hear the sound of animals in the distance.")
@@ -224,7 +222,7 @@ def pillar_scene():
     ans ='incorrect'
     while(ans == 'incorrect'):
         if(c1.upper()=='INVESTIGATE'):
-            if(player=='1'):
+            if(clearing_scene()=='True'):
                 print("\nOn the top of the pillar is an acorn-shaped hole.")
                 print("\nYou place the golden acorn in the hole and hear a rumbling sound.")
                 print("\nSlowly the pillar starts to spin, as it does a hidden staircase opens up, you descend down the stairs.")
@@ -400,7 +398,7 @@ def secret_room_scene():
             print("\nThe fall is short but devastating, you find yourself at the bottom of pit you can't get out of.")
             print("\nAs you come to the sad realization you contemplate whether it was ever a good idea leave the beach.")
             ans = 'correct'
-        elif(c1.upp()=='NADYA'):
+        elif(c1.upper()=='NADYA'):
             print("\nAs you speak the name NADYA a hidden door in the wall in front of you opens up, it leads downward into the darkness.")
             print("\nYour grip around the short sword tightens as you move deeper into the darkness.")
             print("\nA minute passes as you clumsily make your way downward, but suddenly you see a strong light.")
