@@ -34,8 +34,25 @@ It's a bigger assignement and I will continue to implement this idea further.
 ## Testing
 The project has been test manually by doing the following things:
 - Responsive dimensions through the inspect function on Google Chrome.
-- 
-- 
+- Checked Python syntax errors in ExtendsClass [ExtendsClass](https://extendsclass.com/python-tester.html).
+
+| Scene | Should do | Errors | Works |
+|-------|-----------|--------|-------|
+| start | Start the game | No error | Yes |
+| intro scene | First choice | No error | Yes |
+| beach scene | Second choice | No error | Yes |
+| shipwreck scene | Give a hint | No error | Yes |
+| clearing scene | Item pickup | 1 error | Partly |
+| gate scene | Question | No error | Yes |
+| pillar scene | Item give away | 1 error | Partly |
+| house outer scene | Back and forth point | No error | Yes |
+| pillar two scen | Item give away | 1 error | Partly |
+| cavern scene | Ending part | No error | Yes |
+| basket scene | Item pickup | 1 error | Partly |
+| secret room scene | Question | No error | Yes |
+| ship scene | Ending part | No error | Yes |
+| gold scene | Ending part | Nor error | Yes |
+
 
 ### Screenshots screens
 Laptop size
