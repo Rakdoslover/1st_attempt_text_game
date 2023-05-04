@@ -1,4 +1,5 @@
 import time
+import sys
 
 player = False
 
@@ -44,15 +45,15 @@ def intro_scene():
     while(ans == 'incorrect'):
         if(c1.upper()=='STAY'):
             print("""\n You feel content with where you are and your situation,\n
-                 the sun travels across the sky and disappears beyond the horizon.\n
-                 Night falls upon the island and then sleep finds you.
+                 the sun travels across the sky and disappears beyond the\n
+                 horizon. Night falls upon the island and then sleep finds you.
                  """)
             ans = 'correct'
-            return
+            sys.exit("The End")
         elif(c1.upper()=="STAND"):
-            print("\nAs you stand up you look around and find that you are on a small island.")
-            print("\nYou can't remember how you got there and you can't make out where you are.")
-            print("\nBehind you a path trails off into a dense and dark forest.")
+            print("""\n As you stand up you look around and find that you are on a small island.\n
+                 You can't remember how you got there and you can't make out where you are.\n
+                 Behind you a path trails off into a dense and dark forest.""")
             ans = 'correct'
             beach_scene()
         else:
