@@ -271,7 +271,7 @@ def pillar_scene():
     ans ='incorrect'
     while(ans == 'incorrect'):
         if(c1.upper()=='INVESTIGATE'):
-            if(player==True):
+            if player:
                 print(
                 """\n On the top of the pillar is an acorn-shaped hole.
                 \n You place the golden acorn in the hole and hear a rumbling sound.
@@ -359,7 +359,7 @@ def pillar_two_scene():
     ans ='incorrect'
     while(ans == 'incorrect'):
         if(c1.upper()=='INVESTIGATE'):
-            if(player==True):
+            if player:
                 print(
                 """\n On the top of the pillar is an acorn-shaped hole.
                     \n You place the golden acorn in the hole and hear a rumbling sound.
