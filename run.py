@@ -177,10 +177,10 @@ def clearing_scene():
                 \n you put it in your pocket.
                 \n You continue your journey into the deeper parts of the forest.
             """)
-            ans = 'correct'
             player = True
-            return player
+            ans = 'correct'
             gate_scene()
+            return player
         elif(c1.upper()=='MOVE ON'):
             print(
             """\n The lovely aroma of the flowers abruptly disappears as you pass
@@ -435,12 +435,12 @@ def basket_scene():
                 \n Something tells you that these might be useful by the 
                 \n pillar you passed earlier.
                 \n You leave the house and make your way down the tree alley 
-                \n towards the loenly pillar.
+                \n towards the lonely pillar.
             """)
-            ans = 'correct'
             player = True
-            return player
+            ans = 'correct'
             pillar_two_scene()
+            return player
         elif(c1.upper()=='INVESTIGATE'):
             print(
             """\n As you lift the sword off it's rest you hear a loud crack 

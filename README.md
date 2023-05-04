@@ -51,7 +51,7 @@ The project has been test manually by doing the following things:
 | basket scene | Item pickup | 1 error | Partly |
 | secret room scene | Question | No error | Yes |
 | ship scene | Ending part | No error | Yes |
-| gold scene | Ending part | Nor error | Yes |
+| gold scene | Ending part | No error | Yes |
 
 
 ### Screenshots screens
