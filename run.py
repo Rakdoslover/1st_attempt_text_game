@@ -275,7 +275,7 @@ def pillar_scene():
                 print(
                 """\n On the top of the pillar is an acorn-shaped hole.
                 \n You place the golden acorn in the hole and hear a rumbling sound.
-                \nSlowly the pillar starts to spin, as it does a hidden staircase opens up,
+                \n Slowly the pillar starts to spin, as it does a hidden staircase opens up,
                 \n you descend down the stairs.
                 """)
                 ans = 'correct'
