@@ -33,18 +33,19 @@ def intro_scene():
     """\n The sun is scorching your beaten body as you wake to the sound of waves rolling in. 
         \n Slowly you open your eyes and find yourself laying in the sand. 
 
-        \n Are you content with laying here for the rest of the day or do you want to explore?
+        \n Are you content with laying here for the rest 
+        \n of the day or do you want to explore?
 
         \n Type your choice: Stay or Stand?
     """)
-
     c1 = input()
     time.sleep(1)
     ans = 'incorrect'
     while(ans == 'incorrect'):
         if(c1.upper()=='STAY'):
-            print("\nYou feel content with where you are and your situation, the sun travels across the sky and disappears beyond the horizon.")
-            print("\nNight falls upon the island and then sleep finds you.")
+            print("\n You feel content with where you are and your situation,\n
+                 "the sun travels across the sky and disappears beyond the horizon.\n
+                 "Night falls upon the island and then sleep finds you.")
             ans = 'correct'
         elif(c1.upper()=="STAND"):
             print("\nAs you stand up you look around and find that you are on a small island.")
@@ -55,6 +56,7 @@ def intro_scene():
         else:
             print("ENTER THE CORRECT CHOICE! Stay or Stand?")
             c1 = input()
+
 
 def beach_scene():
     """
@@ -276,6 +278,7 @@ def house_outer_scene():
             print("ENTER THE CORRECT CHOICE! Enter or Return?")
             c1 = input()
 
+
 def pillar_two_scene():
     """
     This the function defining the players choice back at the pillar
@@ -314,6 +317,7 @@ def pillar_two_scene():
             print("ENTER THE CORRECT CHOICE! Investigate or Move on?")
             c1 = input()
 
+
 def cavern_scene():
     """
     This is the function leading the player through the cavern after the pillar.
@@ -331,6 +335,7 @@ def cavern_scene():
         Congratulation on escaping the Lost Island!
         Until next time stranger!
     """)
+
 
 def basket_scene():
     """
@@ -366,6 +371,7 @@ def basket_scene():
         else:
             print("ENTER THE CORRECT CHOICE! Acorns or Investigate?")
             c1 = input()
+
 
 def secret_room_scene():
     """
@@ -411,6 +417,7 @@ def secret_room_scene():
         else:
             print("ENTER THE CORRECT NAME! Please try again.")
             c1 = input()
+
 
 def ship_scene():
     """
@@ -485,6 +492,7 @@ def main():
     Run all program functions
     """
     start()
+
 
 print(""" Welcome to the Lost Island!!\n
         \n Let's dive into the tropical adventure!!""")
