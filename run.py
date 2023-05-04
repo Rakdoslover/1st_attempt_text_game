@@ -371,7 +371,7 @@ def pillar_two_scene():
             else:
                 print(
                 """\n On the top of the pillar is an acorn-shaped hole.
-                    \n Something seems out of place, put you can't put your finger on what.
+                    \n Something seems out of place, but you can't put your finger on what.
                     \n As you can't do more you move along through the tree alley.
                 """)
                 house_outer_scene()
@@ -506,6 +506,7 @@ def secret_room_scene():
                 \n was ever a good idea leave the beach.
             """)
             ans = 'correct'
+            sys.exit("The End")
         elif(c1.upper()=='NADYA'):
             print(
             """\n As you speak the name NADYA a hidden door in the wall in front 
