@@ -377,7 +377,7 @@ def pillar_two_scene():
                 house_outer_scene()
         elif(c1.upper()=='MOVE ON'):
             print(
-            """\n You turn around again as you making your way up the steep hill again.
+            """\n You turn around again as you make your way up the steep hill one more time.
                 \n Soon enough you see the small house at the end of the tree alley.
             """)
             ans = 'correct'
@@ -651,11 +651,10 @@ def main():
     
     start()
 
-    
-
 
 print(
     """\n Welcome to the Lost Island!!
         \n Let's dive into the tropical adventure!!
     """)
 main()
+sys.exit("The End")
