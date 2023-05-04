@@ -1,32 +1,44 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Welcome to The Lost Island!
 
-Welcome,
+The Lost Island is a text-based adventure game involving you the player as "The Stranger".
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+You wake up on a sunny beach somewhere in time and space, you have no memory and no idea of where you are.
+Can you somehow figure out a way to get off the island? We'll see about that!
 
-## Reminders
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## Game Features
 
-## Creating the Heroku app
+The main functions of the game is letting the player make decisions(up towards 5 choices) at each scene, that guides them off the island.
+The decisions varies from simple prompts to writing or spelling names.
+Depending on the players choices he/she gets a new scene defined byt their answer.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+The game features multiple endings, both good and bad and can even be "cleared" at the very first stage.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+Implemented a basic item pickups system where as if the player made a certain choice beforehand, they get a specific scenerio where there usually isn't one. This happens at least 3 times in story.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+## Testing
+The project has been test manually by doing the following things:
+- 
+- 
+- 
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+### Bugs
 
-Connect your GitHub repository and deploy as normal.
 
-## Constraints
+## Deployment
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+The project was deployed using Code Institutes's mock terminal for Heroku.
 
----
+Steps for deployment:
+    1. Made the repository link for GitHub.
+    2. Created a new app on Heroku.
+    3. Set the buildbacks to Python and NodeJS, in that order.
+    4. Link the Heroku app to the repository.
+    5. Clicked on the "Deploy".
 
-Happy coding!
+
+
+## Credits
+- Code Institute for for the deployment terminal.
+- AskPython for the idea of the main functions in the game.
+- All the help of my mentor for guiding me through the process.
