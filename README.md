@@ -43,13 +43,13 @@ The project has been test manually by doing the following things:
 | intro scene | First choice | No error | Yes |
 | beach scene | Second choice | No error | Yes |
 | shipwreck scene | Give a hint | No error | Yes |
-| clearing scene | Item pickup | 1 error | Partly |
+| clearing scene | Item pickup | No error | Yes |
 | gate scene | Question | No error | Yes |
-| pillar scene | Item give away | 1 error | Partly |
+| pillar scene | Item give away | No error | Yes |
 | house outer scene | Back and forth point | No error | Yes |
-| pillar two scen | Item give away | 1 error | Partly |
+| pillar two scen | Item give away | No error | Yes |
 | cavern scene | Ending part | No error | Yes |
-| basket scene | Item pickup | 1 error | Partly |
+| basket scene | Item pickup | No error | Yes |
 | secret room scene | Question | No error | Yes |
 | ship scene | Ending part | No error | Yes |
 | gold scene | Ending part | No error | Yes |
@@ -68,6 +68,7 @@ Phone size
 ### Bugs
 
 Have a had a problem with the item system. It won't react to the players choice after picking up the right item.
+For now it is not implemented into the final version of the game.
 
 ## Deployment
 

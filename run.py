@@ -2,8 +2,6 @@ import time
 import sys
 
 
-player = False
-
 
 def start():
     """
@@ -177,10 +175,8 @@ def clearing_scene():
                 \n you put it in your pocket.
                 \n You continue your journey into the deeper parts of the forest.
             """)
-            player = True
             ans = 'correct'
             gate_scene()
-            return player
         elif(c1.upper()=='MOVE ON'):
             print(
             """\n The lovely aroma of the flowers abruptly disappears as you pass
@@ -271,22 +267,12 @@ def pillar_scene():
     ans ='incorrect'
     while(ans == 'incorrect'):
         if(c1.upper()=='INVESTIGATE'):
-            if player:
-                print(
-                """\n On the top of the pillar is an acorn-shaped hole.
-                \n You place the golden acorn in the hole and hear a rumbling sound.
-                \n Slowly the pillar starts to spin, as it does a hidden staircase opens up,
-                \n you descend down the stairs.
-                """)
-                ans = 'correct'
-                cavern_scene()
-            else:
-                print(
-                """\n On the top of the pillar is an acorn-shaped hole.
-                    \n Something seems out of place, put you can't put your finger on what.
-                    \n As you can't do more you move along through the tree alley.
-                """)
-                house_outer_scene()
+            print(
+            """\n On the top of the pillar is an acorn-shaped hole.
+                \n Something seems out of place, put you can't put your finger on what.
+                \n As you can't do more you move along through the tree alley.
+            """)
+            house_outer_scene()
         elif(c1.upper()=='MOVE ON'):
             print(
             """\n The trees forming the walls of the alley tunnel are so thick that you can't 
@@ -359,22 +345,12 @@ def pillar_two_scene():
     ans ='incorrect'
     while(ans == 'incorrect'):
         if(c1.upper()=='INVESTIGATE'):
-            if player:
-                print(
-                """\n On the top of the pillar is an acorn-shaped hole.
-                    \n You place the golden acorn in the hole and hear a rumbling sound.
-                    \n Slowly the pillar starts to spin, as it does a hidden staircase 
-                    \n opens up, you descend down the stairs.
-                """)
-                ans = 'correct'
-                cavern_scene()
-            else:
-                print(
-                """\n On the top of the pillar is an acorn-shaped hole.
-                    \n Something seems out of place, but you can't put your finger on what.
-                    \n As you can't do more you move along through the tree alley.
-                """)
-                house_outer_scene()
+            print(
+            """\n On the top of the pillar is an acorn-shaped hole.
+                \n Something seems out of place, but you can't put your finger on what.
+                \n As you can't do more you move along through the tree alley.
+            """)
+            house_outer_scene()
         elif(c1.upper()=='MOVE ON'):
             print(
             """\n You turn around again as you make your way up the steep hill one more time.
@@ -410,6 +386,7 @@ def cavern_scene():
     """)
     sys.exit("The End")
 
+
 def basket_scene():
     """
     This is the function defining the players choice by the basket.
@@ -437,10 +414,8 @@ def basket_scene():
                 \n You leave the house and make your way down the tree alley 
                 \n towards the lonely pillar.
             """)
-            player = True
             ans = 'correct'
             pillar_two_scene()
-            return player
         elif(c1.upper()=='INVESTIGATE'):
             print(
             """\n As you lift the sword off it's rest you hear a loud crack 
