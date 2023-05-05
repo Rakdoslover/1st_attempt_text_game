@@ -484,7 +484,7 @@ def secret_room_scene():
     while(ans == 'incorrect'):
         if(c1.upper()=='ADAM'):
             print(
-            """\n As you speak the name ADAM a trapdoor suddenly opens up under
+            """\n As you speak the name ADAM, a trapdoor suddenly opens up under
                 \n you feet and you fall.
                 \nThe fall is short as you quickly land on a chute and your 
                 \n descent speeds up.
@@ -498,18 +498,18 @@ def secret_room_scene():
             ship_scene()
         elif(c1.upper()=='MAYA'):
             print(
-            """\n As you speak the name MAYA a trapdoor suddenly opens up under 
+            """\n As you speak the name MAYA, a trapdoor suddenly opens up under 
                 \n your feet and you fall.
                 \n The fall is short but devastating, you find yourself at the 
-                \n bottom of pit you can't get out of.
+                \n bottom of a pit you can't get out of.
                 \n As you come to the sad realization you contemplate whether it 
-                \n was ever a good idea leave the beach.
+                \n was ever a good idea to leave the beach.
             """)
             ans = 'correct'
             sys.exit("The End")
         elif(c1.upper()=='NADYA'):
             print(
-            """\n As you speak the name NADYA a hidden door in the wall in front 
+            """\n As you speak the name NADYA, a hidden door in the wall in front 
                 \n of you opens up, it leads downward into the darkness.
                 \n Your grip around the short sword tightens as you move deeper 
                 \n into the darkness.
