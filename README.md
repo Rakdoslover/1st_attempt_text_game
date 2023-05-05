@@ -35,6 +35,8 @@ It's a bigger assignement and I will continue to implement this idea further.
 The project has been test manually by doing the following things:
 - Responsive dimensions through the inspect function on Google Chrome.
 - Checked Python syntax errors in ExtendsClass [ExtendsClass](https://extendsclass.com/python-tester.html). Found no problem with the code.
+- Checked Python in [CI Python Linter](https://pep8ci.herokuapp.com/)
+![CI Linter Python](assets/images/no-errors.jpg)
 - Tried all scene with different commands that's not supposed to work and got the correct responses, the program wouldn't break.
 
 | Scene | Should do | Errors | Works |
